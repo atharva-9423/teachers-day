@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Background Template</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Fullscreen Background Video (no loop so ended event triggers poster) -->
+  <video id="bgVideo" playsinline preload="auto">
+    <source src="videos/inguration.mp4" type="video/mp4" />
+    <source src="videos/inguration.mov" type="video/quicktime" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 4:3 Poster (Visible by default and upon video ending) -->
+  <div id="posterOverlay" class="poster-overlay">
+    <div class="poster-card">
+      <img src="poster/poster.jpg" alt="Poster" class="poster-img" />
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <main class="content">
+    <!-- Place your template content here -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
